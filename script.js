@@ -22,6 +22,19 @@ document.querySelector('#cart-btn').onclick = () => {
     searchForm.classList.remove('active');
 }
 
+// Définition des événements de clic pour le bouton "Mentions légales" et la fermeture de la modale
+let mentionsLegalesBtn = document.querySelector('.mentions-legales-btn');
+let mentionsLegalesModal = document.querySelector('.mentions-legales-modal');
+let closeModal = document.querySelector('.close-modal');
+
+mentionsLegalesBtn.onclick = () => {
+    mentionsLegalesModal.style.display = 'block';
+}
+
+closeModal.onclick = () => {
+    mentionsLegalesModal.style.display = 'none';
+}
+
 window.onscroll = () => {
     navbar.classList.remove('active');
     searchForm.classList.remove('active');
